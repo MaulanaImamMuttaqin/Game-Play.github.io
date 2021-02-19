@@ -1,0 +1,26 @@
+@keyframes rotate{
+    from{ transform: rotate(0deg);}
+    from{ transform: rotate(360deg);}
+}
+@keyframes onload{
+    from{
+        transform: translate(-100%,-50%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
+@keyframes title-comes{
+    0%{
+        opacity: 0;
+        transform: scale(0.7,0.7);
+    }
+    75%{
+        opacity: 0;
+        transform: scale(0.7,0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}

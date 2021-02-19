@@ -1,0 +1,315 @@
+/* @font-face {
+    font-family: Railway;
+    src: url(Raleway-black.ttf);
+  } */
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.border{
+    border: 1px solid;
+}
+
+/* HEADER */
+    header{
+        height: 100vh;
+    }
+/* Navbar */
+    nav {
+        background-color: rgba(255, 255, 255, 0.75);
+        width:600px;
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: fixed;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+        box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+        z-index: 100;
+        
+        
+    }
+    ul{
+
+    }
+    ul li{
+        display: inline;
+        text-align: center;
+    }
+    nav a{
+        text-decoration: none;  
+        color: rgb(21, 21, 21);
+        border-radius: 50px;
+        line-height: 40px;
+        padding: 0 10px;
+        margin: 5px 0;
+        font-weight: 700;
+        transition: font-size .1s;
+    }
+
+    .highlight{
+        background-color: rgb(41, 88, 232);
+        color:white;
+        font-size: 1.1em;
+    }
+/* Navbar end */
+
+/* Wave */
+    .waves{
+        height:100vh;
+        width:50vw;
+        position:relative;
+        animation: onload 1s ease;
+        display: inline-block;
+        float: left;
+    }
+    .waves .wave{
+        height:250%;
+        width:250%;
+        bottom:-10%;
+        right:-10%;
+        border-radius:40%;
+        position:absolute;
+        z-index: -1;
+    }
+    .wave1{
+        animation: rotate 9s linear infinite;
+        background-color: rgba(41, 88, 232,0.9);
+    }
+    .wave2{
+        animation: rotate 12s linear infinite;
+        background-color: rgba(41, 88, 232,0.7);
+    }
+    .wave3{
+        animation: rotate 15s linear infinite;
+        background-color: rgba(41, 88, 232,0.3);
+    }
+/* Wave end */
+
+/* icons */
+    .icons{
+        padding:7vw;
+    }
+    .icons img{
+        animation : title-comes 1.2s ease;
+        width:30vw;
+        
+    }
+/* icons end */
+
+/* titles */
+    .titles{
+        display: inline-block;
+        height:100vh;
+        width:45vw; 
+        float: right;
+        font-size: 1.3em;
+        animation : title-comes 1.2s ease;
+    }
+    .logo{
+        padding:0vw 8vw;
+    }
+    .logo img{
+        width:30vw;
+        display: block;
+        margin: 0 auto;
+    }
+/* titles end */
+
+/* start-button */
+    .start-button{
+        padding:20px;
+    }
+    .start-button a{
+        text-decoration: none;
+        background-color: rgba(41, 88, 232,1);
+        border-radius: 50px;
+        padding:20px 50px;
+        color:white;
+        font-weight: 600;
+        transition: background-color .2s;
+    }
+    .start-button a:hover{
+        background-color: rgb(21, 73, 232);
+    }
+    .start-button a:active{
+        background-color: rgba(41, 88, 232,.5);
+    }
+/* start button end */
+
+/* MAIN */
+.content{
+    height: 100%;
+}
+#features, #games{
+    height: 100vh;
+    margin:.5vw;
+    background-color: white;
+    border-radius:20px;
+    padding:3vw .5vw;
+    box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+}
+
+section > header{
+    text-align: center;
+    height: auto;
+}
+section header h1{
+    font-size: 2em;
+    margin: 1vw;
+}
+section header p{
+    font-size: 1.2em;
+
+}
+/* Features */
+    #features{
+        height: auto;
+    }
+    article{
+        width:40%;
+        display: inline-block;
+        margin:2vw 5vw;
+        padding:0;
+    }
+    article:nth-child(odd){
+        float:right;
+        margin-right: 15vw;
+    }
+    
+    article:nth-child(even){
+        margin-left: 15vw;
+    }
+    article h2{
+        display: inline-block;
+        border:1px solid;
+        padding:1vw;
+        border-radius: 50px;
+        margin:0;
+        background-color: rgba(41, 88, 232,1);
+        color:white
+    }
+    article p{
+        border:3px solid rgb(120, 150, 242);
+        padding:1vw;
+        border-radius: 20px;
+        margin:0;
+    }
+/* Features end  */
+
+/* Game */
+
+#games{
+    background: rgb(109,143,246);
+    background: radial-gradient(circle, rgba(109,143,246,1) 28%, rgba(41,88,232,1) 100%);
+}
+#games header{
+    color: rgba(255, 255, 255, 0.75);
+}
+.game-colletion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.slider{
+    height: 35vw;
+    width:55vw;
+
+    overflow: hidden;
+}
+.wrapper{
+    height: 100%;
+    width:301%;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    transition: right .5s;
+}
+.slide{
+    height: 35vw;
+    width:55vw;
+    display: inline-block;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.controller{
+    height: 35vw;
+    width:7%;
+    transition: background-color .2s;
+    text-align: center;
+}
+.controller span{
+    font-size: 2.5em;
+    color: rgb(7, 39, 135);
+    line-height: 35vw;
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, .3);
+}
+.controller:hover {
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+.row1{
+    height: 75%;
+    flex-basis:66.66%;
+    display: flex;
+}
+.row1 > div{
+    flex-basis: 50%;
+}
+
+.row2{
+    height: 25%;
+    display:flex;
+    flex-basis:33.33%;
+
+}
+.row2 > div{
+    flex-basis: 25%;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col > div{
+    flex-basis: 50%;
+}
+.box{
+    padding:5px;
+    transition:padding .2s;
+}
+.box:hover{
+    padding:0;
+    cursor: pointer;
+}
+
+/* Game end */
+
+
+/* FOOTER */
+    footer{
+        border:1px solid;
+        height: auto;
+    }
+    footer img{
+        width:20vw;
+    }
+/* FOOTER */
