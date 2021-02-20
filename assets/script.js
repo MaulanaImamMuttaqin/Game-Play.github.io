@@ -1,4 +1,6 @@
-let nav_button = document.querySelectorAll("nav a");
+let nav_button = document.querySelectorAll("nav a"),
+    bar_button = document.querySelector(".nav-button"),
+    nav_bar = document.querySelector("nav")
 
 let slider_wrapper = document.querySelector(".wrapper"),
     prev = document.querySelector("#left"),
@@ -15,6 +17,7 @@ nav_button.forEach(nav=> {
     })
 })
 
+bar_button.addEventListener('click', ()=>{toggleNavBar()})
 
 function changeHighlight(nav){
     nav_button.forEach(x=>{
@@ -41,4 +44,9 @@ function shiftSlide(dir){
         }
     }
     slider_wrapper.style.right = slidePosition +"px"
+}
+
+function toggleNavBar(){
+    nav_bar.classList.toggle("close");
+    nav_bar.classList.toggle("open");
 }
