@@ -55,6 +55,41 @@
         margin-left: 0;
     }
     
+    /* games */
+    .controller{
+        display: none;
+    }
+    .slider{
+        height: 500px;
+        width:99%;
+        overflow-y:scroll;
+    }
+    .wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    .slide{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    /* .slide2, .slide3{
+        display: none;
+    } */
+    .row1, .row2, .col{
+        display: block;
+        height: auto;
+    }
+    /* .row1{
+        overflow: auto;
+    } */
+    .box{
+        display: inline-block;
+        float:left;
+        width: 50%;
+        height: 200px;
+    }
+    
 
     /* about */
     aside img{
@@ -62,14 +97,12 @@
     }
     aside article{
         width:350px;
-        
     }
     aside span{
         display:block;
         margin:0 auto;
         width:70px;
         border-right:unset;
-        border-bottom:2px solid white ;
     }
     aside p{
         text-align: center;

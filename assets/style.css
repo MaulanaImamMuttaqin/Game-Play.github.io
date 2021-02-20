@@ -228,13 +228,12 @@ section header p{
 .slider{
     height: 35vw;
     width:55vw;
-
+    box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
     overflow: hidden;
 }
 .wrapper{
     height: 100%;
     width:301%;
-    overflow: hidden;
     position: relative;
     right: 0;
     transition: right .5s;
@@ -276,8 +275,8 @@ section header p{
     height: 25%;
     display:flex;
     flex-basis:33.33%;
-
 }
+
 .row2 > div{
     flex-basis: 25%;
 }
