@@ -216,7 +216,7 @@ section header p{
         color:white
     }
     #features article p{
-        
+        text-align: center;
         padding:2vw;
         margin:0;
     }
