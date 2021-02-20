@@ -11,11 +11,6 @@ let slider_wrapper = document.querySelector(".wrapper"),
 prev.addEventListener("click",()=> {shiftSlide(-1)})
 next.addEventListener("click",()=> {shiftSlide(1)})
 
-nav_button.forEach(nav=> {
-    nav.addEventListener("click", ()=>{
-        changeHighlight(nav)
-    })
-})
 
 bar_button.addEventListener('click', ()=>{toggleNavBar()})
 
