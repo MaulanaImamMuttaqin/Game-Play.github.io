@@ -72,7 +72,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        overflow: hidden;
     }
     nav{
         flex-direction: column;
@@ -91,7 +91,14 @@
         border-radius:0  20px 20px 0;
     }
     .wave{
-        display: none;
+        display: block;
+        animation : unset;
+    }
+    .wave2{
+        transform: rotate(50deg)
+    }
+    .wave3{
+        transform: rotate(-50deg)
     }
     .titles{
         float: unset;

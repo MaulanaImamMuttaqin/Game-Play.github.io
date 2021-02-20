@@ -14,7 +14,6 @@ body{
     margin: 0;
     padding: 0;
     
-    
 }
 
 .border{
@@ -22,6 +21,7 @@ body{
 }
 
 /* HEADER */
+
     header{
         height: 100vh;
     }
@@ -119,6 +119,10 @@ body{
         float: right;
         font-size: 1.3em;
         animation : title-comes 1.2s ease;
+        
+    }
+    .titles h1{
+        color:rgba(41, 88, 232,0.9);
     }
     .logo{
         padding:0vw 8vw;
@@ -172,6 +176,7 @@ section header h1{
     font-size: 2em;
     margin: 1vw;
     display: inline;
+    color: rgba(41, 88, 232,0.9);
     border-bottom: 3px solid;
 }
 section header p{
@@ -317,6 +322,7 @@ section header p{
         font-size: 2em;
         margin: 1vw;
         display: inline;
+        color: rgba(41, 88, 232,0.9);
         border-bottom: 3px solid;
     }
     aside header p{
