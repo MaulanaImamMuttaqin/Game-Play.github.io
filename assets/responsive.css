@@ -130,6 +130,11 @@
     }
 
     /* main */
+    section > header{
+        text-align: center;
+        height: auto;
+        margin-bottom:60px;
+    }
     #features .content{
         display: flex;
         flex-direction: column;
