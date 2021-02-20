@@ -42,13 +42,6 @@ body{
         
         
     }
-    ul{
-
-    }
-    ul li{
-        list-style: none;
-        text-align: center;
-    }
     nav a{
         text-decoration: none;  
         color: rgb(21, 21, 21);
