@@ -186,6 +186,8 @@ section header p{
         display: inline-block;
         margin:2vw 5vw;
         padding:0;
+        border:3px solid rgb(120, 150, 242);
+        border-radius: 20px 0 20px 0;
     }
     #features article:nth-child(odd){
         float:right;
@@ -197,17 +199,16 @@ section header p{
     }
     #features article h2{
         display: inline-block;
-        border:1px solid;
         padding:1vw;
-        border-radius: 50px;
+        border-radius: 16px 0 16px 0;
         margin:0;
+        font-size: 1.1em;
         background-color: rgba(41, 88, 232,1);
         color:white
     }
     #features article p{
-        border:3px solid rgb(120, 150, 242);
-        padding:1vw;
-        border-radius: 20px;
+        
+        padding:2vw;
         margin:0;
     }
 /* Features end  */
